@@ -2,11 +2,10 @@ from datetime import *
 from TwitterSearch import *
 try:
     tso = TwitterSearchOrder() #Creando un objeto TwitterSearchOrder
-    # tso.set_keywords(['AMLO' ,'PRESIDENTE', '2018', 'since:2018-03-01','until:2018-03-01']) # definiendo palabras a buscar en el tweet
-    tso.set_keywords(['AMLO' ,'PRESIDENTE', '2018']) # definiendo palabras a buscar en el tweet
+    tso.set_keywords(['#DigitalMarketing']) # definiendo palabras a buscar en el tweet
     tso.set_language('es') # idioma de los tweets
     tso.set_include_entities(False) # nodo de entidad
-    tso.set_since(date(2018, 2,28))
+    tso.set_since(date(2018, 3, 2))
 
     # creando objeto con los tokens secretos de la app creada en twitter
     ts = TwitterSearch(
